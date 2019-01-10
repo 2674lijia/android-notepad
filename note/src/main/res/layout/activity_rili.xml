@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cqipc.lijia.note.SildingFinishLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timed_task_SildingFinishLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#86b0e4">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:src="@drawable/back_1"/>
+        <TextView
+            android:id="@+id/tvYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2018年12月"
+            android:textColor="#0b0b0b"
+            android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvNow"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:text="22"
+                android:gravity="center|bottom"
+                android:textColor="#0b0b0b"
+                android:textSize="17dp"
+                android:background="@drawable/rili"/>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            app:selected_text_color="#0b0b0b"
+            app:selected_theme_color="#86b0e4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.haibin.calendarview.CalendarView>
+        <ListView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ri_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+</cqipc.lijia.note.SildingFinishLayout>

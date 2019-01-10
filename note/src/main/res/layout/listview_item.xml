@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:id="@+id/rrr"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:padding="4dp"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题信息"
+        android:textColor="#0a0909"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/time"
+        android:text="时间信息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4b4a4a"
+        android:textSize="10dp" />
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/checkboxImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

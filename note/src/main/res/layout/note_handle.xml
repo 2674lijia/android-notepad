@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfbfb">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#86b0e4">
+
+        <ImageView
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:id="@+id/tvc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="已选择 "
+            android:textColor="#0b0b0b"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#df0707"
+            android:textSize="17sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/etSearch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/et_search"
+        android:focusable="false"
+        android:hint="搜索备忘录"
+        android:padding="8dp"
+        android:textColorHint="#454343" />
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="15dp" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/et_search"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/delete"
+            android:text="删除"
+            android:textColor="#050505"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/all_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/all"
+            android:text="全选"
+            android:textSize="10dp"
+            android:textColor="#050505" />
+    </LinearLayout>
+</RelativeLayout>

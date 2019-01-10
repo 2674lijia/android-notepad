@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfbfb"
+    android:id="@+id/rl"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        android:background="#86b0e4">
+        <!--<ImageView-->
+            <!--android:layout_gravity="left"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/imgC"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp" />-->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="便签"
+            android:textColor="#0b0b0b"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#df0707"
+            android:textSize="17sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+
+        android:drawableLeft="@drawable/search_s"
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/et_search"
+        android:focusable="false"
+        android:hint="搜索备忘录"
+        android:padding="4dp"
+        android:textSize="14dp"
+        android:textColorHint="#454343" />
+
+    <ListView
+        android:id="@+id/list"
+        android:dividerHeight="1dp"
+        android:divider="#dadada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomL"
+        android:layout_below="@id/etSearch"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="15dp"></ListView>
+    <LinearLayout
+        android:id="@+id/userhandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/rg_select"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/bottomL"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/newNote"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/newfile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建"
+                android:textSize="8dp"
+                android:textColor="#0a0a0a" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="2dp"
+        android:background="#efefef"
+        android:id="@+id/bottomL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/musicL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/music" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音乐"
+                android:textSize="13dp"
+                android:textColor="#0a0a0a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/solarL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日历"
+                android:textSize="13dp"
+                android:textColor="#0a0a0a" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/homeL"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/home"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="主页"-->
+                <!--android:textSize="13dp"-->
+                <!--android:textColor="#0a0a0a" />-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/cameraL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+               android:background="@drawable/camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="照相"
+                android:textSize="13dp"
+                android:textColor="#0a0a0a" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photoL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/gallery"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片"
+                android:textSize="13dp"
+                android:textColor="#0a0a0a" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
